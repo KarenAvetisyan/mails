@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="gg.css">
+</head>
+<body>
+
+	<form action="#" id="form" class="form_body">
+		<h2>Отправка данных</h2>
+		<p class="show_sending_msg">sending</p>
+		<div class="form_item">
+			<label for="formName" class="form_label"> имя </label>
+			<input id="formName" type="text" name="name" class="form_input _req" >
+		</div>
+		<div class="form_item">
+			<label for="formEmail" class="form_label"> email </label>
+			<input id="formEmail" type="text" name="email" class="form_input _req _email" >
+		</div>
+		<div class="form_item">
+			<div class="form_label">Левша или правхса ? </div>
+			<div class="options">
+				<div class="option_item">
+					<input id="formRightHanded" checked type="radio" value="right" name="hand" class="option">
+					<label for="formRightHanded"  type="radio" value="right" name="hand" class="option">Прачса</label>
+				</div>
+				<div class="option_item">
+					<input id="formLeftHanded" checked type="radio" value="left" name="hand" class="option">
+					<label for="formLeftHanded"  type="radio" value="right" name="hand" class="option">левша</label>
+				</div>
+			</div>
+		</div>
+		<div class="form_item">
+			<label for="forMessage" class="form_label">sms</label>
+			<textarea name="message" id="formMessage" class="form_input"></textarea>
+		</div>
+		<div class="form_item">
+			<div class="form_label">Аге:</div>
+			<select name="age" class="select">
+				<option value="ot 18 do 25" selected> molodou</option>
+				<option value="ot 25 do 45" selected> stari</option>
+				<option value="ot 45" selected> super star</option>
+			</select>
+		</div>
+		<div class="form_item">
+			<div class="form_label">prokrepit photo</div>
+			<div class="file">
+				<div class="file_item">
+					<input id="formImage" accept=".jpg, .png, .gif" type="file" name="image" class="file_input">
+					<div class="file_button">choose</div>
+				</div>
+				<div id="formPreview" class="file_preview"></div>
+			</div>
+		</div>
+		<div class="form_item">
+			<div class="checkbox">
+				<input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox_input">
+				<label for="formAgreement" class="checkbox_label _req">i give permission</label>
+			</div>
+		</div>
+		<button type="submit" class="form_button">send</button>
+		
+	</form>
+
+
+
+	<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>

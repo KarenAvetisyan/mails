@@ -1,0 +1,12 @@
+.form_input._error{
+	box-shadow: 0px 0px 15px red;
+}
+
+/*sending */
+.form_body .show_sending_msg{
+	display: none;
+}
+
+.form_body._sending .show_sending_msg{
+	display: block;
+}
